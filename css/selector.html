@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    :link{color:#000}
+    :active{color:green}
+    :hover{color:#D2B48C}
+    .name:after{
+      content:"님 환영합니다."
+    }
+    .name:before{
+      content:"좋은 날씨입니다. "
+    }
+    input[type="text"]{
+      color:red
+    }
+    a[href=^"http://"]{
+    color:red
+    }
+#menu>ul>li:nth-child(even){border: 1px #F00 solid;}
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <ul>
+      <li>Menu item01
+        <ul>
+          <li><a href="https://www.naver.com/">hello world</a></li>
+          <li class="sub on">Menu item02</li>
+          <li>Menu item03</li>
+          <li class="sub">Menu item04</li>
+          <li class="sub">Menu item05</li>
+        </ul>
+      </li>
+      <li id="target"><input type="button" name="" value="Hello world"></li>
+      <li><input type="text" title="this is form" value=""></li>
+      <li><input type="text" title="양식입니다" value=""></li>
+      <li><span class="name">김민철</span></li>
+      <li>Menu item05</li>
+    </ul>
+  </div>
+</body>
+</html>
