@@ -1,0 +1,94 @@
+<script>
+  var korean = prompt("국어 점수를 입력해주세요.");
+    var math = prompt("수학 점수를 입력해주세요.");
+      var english = prompt("영어 점수를 입력해주세요.");
+  var KOR = Number(korean);
+    var MAT = Number(math);
+      var ENG = Number(english);
+
+  console.log(">국어 성적");
+if (KOR<=100 && KOR>=90) {
+  console.log("수");
+  console.log("정말 잘했어요.");
+}
+else if (KOR<90 && KOR>=80) {
+  console.log("우");
+  console.log("참 잘했어요.");
+}
+else if (KOR<80 && KOR>=70) {
+  console.log("미");
+}
+else if (KOR<70 && KOR>=60) {
+  console.log("양");
+    console.log("공부 좀 하세요.");
+}
+else if (KOR<60 && KOR>=1) {
+  console.log("가");
+    console.log("제발 공부 좀 하세요.");
+}
+else if (KOR == 0) {
+  console.log("빵점");
+      console.log("도대체 뭐했어요?");
+}
+else{
+  console.log("장난 좀 치지 마세요.");
+}
+console.log(">수학 성적");
+if (MAT<=100 && MAT>=90) {
+console.log("수");
+console.log("정말 잘했어요.");
+}
+else if (MAT<90 && MAT>=80) {
+console.log("우");
+console.log("참 잘했어요.");
+}
+else if (MAT<80 && MAT>=70) {
+console.log("미");
+}
+else if (MAT<70 && MAT>=60) {
+console.log("양");
+  console.log("공부 좀 하세요.");
+}
+else if (MAT<60 && MAT>=1) {
+console.log("가");
+  console.log("제발 공부 좀 하세요.");
+}
+else if (MAT == 0) {
+console.log("빵점");
+    console.log("도대체 뭐했어요?");
+}
+else{
+console.log("장난 좀 치지 마세요.");
+}
+console.log(">영어 성적");
+if (ENG<=100 && ENG>=90) {
+console.log("수");
+console.log("정말 잘했어요.");
+}
+else if (ENG<90 && ENG>=80) {
+console.log("우");
+console.log("참 잘했어요.");
+}
+else if (ENG<80 && ENG>=70) {
+console.log("미");
+}
+else if (ENG<70 && ENG>=60) {
+console.log("양");
+  console.log("공부 좀 하세요.");
+}
+else if (ENG<60 && ENG>=1) {
+console.log("가");
+  console.log("제발 공부 좀 하세요.");
+}
+else if (ENG == 0) {
+console.log("빵점");
+    console.log("도대체 뭐했어요?");
+}
+else{
+console.log("장난 좀 치지 마세요.");
+}
+  console.log(">비고");
+  if (ENG==0 && MAT==0 && KOR==0) {
+  console.log("친구 공부 안하고 대체 뭐했어요?");
+  }
+</script>

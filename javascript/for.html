@@ -1,0 +1,35 @@
+<script>
+var aaa = prompt("저는 구구단 외는 스크립트에요. 몇 단을 해볼까요? 전부 다 해보고 싶으면 all을 입력해주세요.");
+var i = Number(aaa);
+
+if (i>1 && i<=9) {
+  console.log(i+"단");
+  for (var j=2; j<10; j++){
+    console.log(i+"*"+j+"="+(i*j));
+  }
+}
+else if(i==1){
+  console.log("1단이라니 장난쳐요?");
+}
+else if(i>=10){
+  console.log("그건 잘 모르겠어요ㅠㅠ");
+  console.log("2단부터 9단까지만 알아요ㅠㅠ");
+}
+else if(typeof aaa=="undefined"||aaa==null||aaa==""){
+  console.log("뭔가 써주세요");
+}
+else if(aaa=="all"){
+  console.log("전부 다요? 해보죠");
+    for (var k=2; k<10; k++){
+  console.log(k+"단");
+  for (var j=2; j<10; j++){
+    console.log(k+"*"+j+"="+(k*j));
+  }
+}
+  console.log("어때요, 잘하죠?");
+}
+else {
+  console.log("이상한거 넣지 마세요");
+  console.log("이건 구구단 외는 스크립트지 빅스비가 아니에요");
+}
+</script>
