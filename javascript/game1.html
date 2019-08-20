@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>홀짝</title>
+  <script>
+    //init
+      var Answer = null;
+      var usermoney=[];
+      var dealermoney=[];
+      var money;
+      console.log(dealermoney);
+//섞기
+    function shuffle(){
+      var random = Math.random() * 10;
+      random = Math.floor(random);
+      var EnO = random % 2;
+      if(EnO == 0){
+        Answer = "짝"
+      }
+      else{
+        Answer = "홀"
+      }
+    }
+    //더하기
+    function
+    //홀짝 퀴즈
+    function Answer0(){
+      var userA = prompt('정답을 작성하세요')
+      if(userA == Answer){
+        document.getElementById('write').innerHTML="<span>정답입니다!</span>"
+        usermoney.push(money)
+        console.log("나: "+usermoney)
+        document.getElementById('premoney').innerHTML=usermoney +"원";
+      }
+      else{
+        document.getElementById('write').innerHTML="<span>틀렸어요. 정답은 "+Answer+"입니다.</span>"
+        dealermoney.push(money)
+        console.log("딜러: "+dealermoney)
+        document.getElementById('dealermoney').innerHTML=dealermoney +"원";
+      }
+    }
+    function bet(){
+      money = prompt('얼마를 거시겠어요?');
+      document.getElementById('point').innerHTML= money +"원";
+    }
+  </script>
+</head>
+<body>
+  <button onclick="bet()">걸어</button>
+  <button onclick="shuffle()">섞어</button>
+  <button onclick="Answer0()">맞춰</button>
+  <h1>Status</h1>
+  <div id="write"></div>
+  <span>현재 판돈: </span>
+  <div id="point"></div>
+  <span>현재 소지금: </span>
+  <div id="premoney"></div>
+  <span>딜러 소지금: </span>
+  <div id="dealermoney"></div>
+</body>
+</html>

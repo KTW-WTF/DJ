@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>업 앤 다운</title>
+  <script>
+    var random_number = Math.floor(Math.random() *50)+1
+    console.log(random_number);
+    var limit = 5;
+    console.log(limit);
+    for(var i=0; i<limit; i++){
+      var user_number = prompt("1부터 50까지의 숫자를 입력해주세요.");
+      if(user_number == random_number){
+        alert("정답!");
+        break;
+      }
+      else if(user_number < random_number){
+        alert("UP!");
+      }
+      else if(user_number > random_number && user_number<=50){
+        alert("DOWN!");
+      }
+      else{
+        alert("제대로 된 수치를 입력해주세요. 기회가 하나 날아갔습니다!");
+      }
+    }
+  </script>
+</head>
+<body>
+
+</body>
+</html>

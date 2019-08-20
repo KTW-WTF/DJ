@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>업 앤 다운</title>
+  <script>
+    // 랜덤 숫자 생성
+    var random_number = Math.floor(Math.random() * 50)+1;  
+    console.log(random_number)
+
+    // 게임 횟수 제한
+    var chance = 5;
+
+    // 숫자를 입력할 수 있는 입력창
+    for(var i=0; i<chance; i++){
+      var user_number = prompt("숫자를 입력하세요.")
+      if(random_number < user_number){
+        alert("다운!")
+      }
+      else if(random_number > user_number){
+        alert("업!")
+      }
+      else if(random_number == user_number){
+        alert("정답!")
+        break;
+      }
+      else{
+        alert("올바른 값을 입력하세요. 기회 하나가 날아갔습니다.")
+      }
+    }
+    // 정답 여부 판단
+  </script>
+</head>
+<body>
+
+</body>
+</html>
