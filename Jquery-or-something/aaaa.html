@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../jquery.js"></script>
+  <style media="screen">
+    .wrapper{
+      width: 700px;
+      height: 2000px;
+      border: 1px #f00 solid;
+      margin: 0 auto;
+    }
+    .f-banner{
+      width: 100px;
+      height: 300px;
+      border: 1px #f00 solid;
+      position: absolute;
+      left:50%;
+      margin-left: 360px;
+    }
+  </style>
+  <script>
+    $(document).ready(function(){
+console.log('ll');
+      $(window).scroll(function(){
+        console.log('ll');
+       var sct = $(this).scrollTop();
+       $('.f-banner').stop().animate({
+                 top:sct
+       },1000);
+      });
+    })
+</script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="f-banner">
+    fly
+  </div>
+  <div class="wrapper">
+
+  </div>
+</body>
+</html>
